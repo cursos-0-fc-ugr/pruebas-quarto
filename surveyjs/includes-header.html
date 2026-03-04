@@ -1,0 +1,72 @@
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+
+<script src="https://unpkg.com/survey-core@2.5.14/survey.core.min.js"></script>
+<script src="https://unpkg.com/survey-core@2.5.14/survey.i18n.min.js"></script>
+<script src="https://unpkg.com/survey-core@2.5.14/themes/index.min.js"></script>
+<script src="https://unpkg.com/survey-js-ui@2.5.14/survey-js-ui.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/survey-core@2.5.14/survey-core.min.css" />
+
+<style>
+div {
+  &.callout {
+    font-size: 2rem !important;
+  }
+}
+.callout-body-container {
+    font-size: 1rem !important;
+}
+
+</style>
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [                    // start/end delimiter pairs for in-line math
+      ['\\(', '\\)'],
+        ['$', '$']
+    ],
+    displayMath: [                   // start/end delimiter pairs for display math
+      ['$$', '$$'],
+      ['\\[', '\\]']
+    ]
+    },
+    output: {
+        font: 'mathjax-fira'
+    }
+};
+
+JXG.Options.text.useMathJax = true;
+JXG.Options.point.showInfobox = false;
+
+function show2(divID) {
+    var sol = document.getElementById("solucion-"+divID);
+    var div = document.getElementById(divID);
+
+    if(sol.style.display == "none"){
+    sol.style.display = "unset";
+    }else{
+    sol.style.display = "none";
+    }
+
+    if(div.innerHTML == "Solución"){
+    div.innerHTML = "Oculta solución";
+    }else{
+    div.innerHTML = "Solución";
+    }
+}
+function show(divID) {
+    var sol = document.getElementById("solucion-"+divID);
+    var div = document.getElementById(divID);
+
+    console.log(sol);
+    sol.classList.toggle('collapse');
+
+    if(div.innerHTML == "Solución"){
+    div.innerHTML = "Oculta solución";
+    }else{
+    div.innerHTML = "Solución";
+    }
+
+}
+</script>
