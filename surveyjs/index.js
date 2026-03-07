@@ -7,6 +7,9 @@
 
 const survey = new Survey.Model(json);
 
+survey.locale = "es";
+
+
 survey.applyTheme(myTheme);
 
 
@@ -47,7 +50,7 @@ survey.onValueChanged.add((_, options) => {
     changeTitle(options.question);
 });
 survey.onTextMarkdown.add((_, options) => {
-    MathJax.typesetPromise();
+    //MathJax.typesetPromise();
     const text = options.text;
     let html = getTextHtml(text, correctStr, true);
     if (!html) {
@@ -58,6 +61,13 @@ survey.onTextMarkdown.add((_, options) => {
         options.html = html;
     }
 });
+
+function updateMath() {
+        MathJax.typesetPromise();
+}
+
+survey.onAfterRenderQuestion.add(updateMath);
+
 
 
 survey.render(document.getElementById("surveyElement"));
