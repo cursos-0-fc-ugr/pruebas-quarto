@@ -1,7 +1,7 @@
 const json = {
   "title": "Números complejos",
   "description": "Cuestionario de autoevaluación",
-  "showNavigationButtons": false,
+  "showNavigationButtons": true,
   "completedHtml": "Has acertado <b>{correctAnswers}</b> de un total de <b>{questionCount}</b> preguntas.",
   "pages": [
     {

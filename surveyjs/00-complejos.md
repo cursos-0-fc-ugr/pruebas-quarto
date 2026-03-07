@@ -385,10 +385,10 @@ $z_4=1.$
         JXG.Options.text.useMathJax = true;
         function pintae41(){
           var board = JXG.JSXGraph.initBoard('ebox4-1', {boundingbox: [-3, 3, 3, -3], showCopyright:false, showNavigation:false, axis:true});
-          board.create('point',[Math.sqrt(3),-1],{name:'\$z_1\$',fixed:true})
-          board.create('point',[-Math.sqrt(3),1],{name:'\$-z_1\$',fixed:true})
-          board.create('point',[Math.sqrt(3),1],{name:'\$\\overline{z_1}\$',fixed:true})
-          board.create('point',[-Math.sqrt(3),-1],{name:'\$-\\overline{z_1}\$',fixed:true})
+          board.create('point',[Math.sqrt(3),-1],{name:'\\(z_1\\)',fixed:true})
+          board.create('point',[-Math.sqrt(3),1],{name:'\\(-z_1\\)',fixed:true})
+          board.create('point',[Math.sqrt(3),1],{name:'\\(\\overline{z_1}\\)',fixed:true})
+          board.create('point',[-Math.sqrt(3),-1],{name:'\\(-\\overline{z_1}\\)',fixed:true})
         }
         pintae41();
         </script>
@@ -478,11 +478,11 @@ Calcula:
 ::::
 
 
-<div style="float:right">
+<!-- <div style="float:right">
 <button id="surveyPrev" class="btn btn-light btn-sm" onclick="survey.prevPage();MathJax.typesetPromise();">Página anterior</button>
 <button id="surveyNext" class="btn btn-light btn-sm" onclick="survey.nextPage();MathJax.typesetPromise();">Página siguiente</button>
 <button id="surveyComplete" class="btn btn-light btn-sm" onclick="survey.tryComplete();">Terminar</button>
-</div>
+</div> -->
 
 <div id="surveyElement"></div>
 <script src="./json.js"></script>

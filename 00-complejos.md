@@ -16,9 +16,6 @@ format:
 ---
 
 
-
-
-
 ## El cuerpo de los números complejos
 
 En el cuerpo de los números reales la ecuación $x^2+1=0$ no tiene solución. Para conseguir soluciones de esta ecuación es necesario, por tanto, ampliar el conjunto de los números reales. El nuevo conjunto de números que resulta de esta ampliación es el conjunto de los números complejos.
@@ -74,7 +71,7 @@ También de esta forma es fácil considerar $\mathbb R$, el conjunto de los núm
 
 :::: {#exr-1}
 
-Calcula la suma, producto, diferencia y cociente de los pares de números complejos $z_1=(2,1)$ y $z_1=(-2,3).$ Calcula además las mismas operaciones utilizando la forma binómica.  <button id="e1-1" class="btn btn-light btn-sm" onclick="show('e1-1');">Solución</button>  
+Calcula la suma, producto, diferencia y cociente de los pares de números complejos $z_1=(2,1)$ y $z_1=(-2,3).$ Calcula además las mismas operaciones utilizando la forma binómica.  <button id="e1-1" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>  
 
 ::::
 
@@ -147,7 +144,7 @@ $$
 Como $0 < 4-r\leq 4$, entonces $i^{4-r}$ es una de las primeras potencias de exponente natural de $i$ que hemos calculado antes.
 
 :::: {#exr-2}
-1.  Calcula las potencias $155$, $7$, $9$, $23$ y $-19$ de la unidad imaginaria $i=(0,1)$. <button id="e2-1" class="btn btn-light btn-sm" onclick="show('e2-1');">Solución</button>
+1.  Calcula las potencias $155$, $7$, $9$, $23$ y $-19$ de la unidad imaginaria $i=(0,1)$. <button id="e2-1" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
     ::: {#solucion-e2-1 .callout .collapse}
     El resto de dividir $155$ entre $4$ es $3$, por lo que $i^{155}=i^3=-i$. Lo mismo ocurre con $7$ y $23$. Para exponente $9$, $i^9=i^{2\times 4+1}=i$. 
@@ -157,14 +154,14 @@ Como $0 < 4-r\leq 4$, entonces $i^{4-r}$ es una de las primeras potencias de exp
 
 2.  Expresa los números complejos $z_1=(-1,1)$, $z_2=(1,2)$ y $z_3=(4,-1)$ en forma binómica y realiza las operaciones siguientes:
 
-    1.  $\dfrac{z_1\overline{z_2}-{z_3}^2}{z_3}$. <button id="e2-2" class="btn btn-light btn-sm" onclick="show('e2-2');">Solución</button>
+    1.  $\dfrac{z_1\overline{z_2}-{z_3}^2}{z_3}$. <button id="e2-2" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
         ::: {#solucion-e2-2 .callout .collapse}
         $\dfrac{z_1\overline{z_2}-{z_3}^2}{z_3}=-\dfrac{67}{17} +
         \dfrac{30}{17}i$
         :::
 
-    2.  $\dfrac{-(\overline{z_1}){(z_2)}^2+iz_3}{\overline{z_1}+\overline{z_3}}$. <button id="e2-3" class="btn btn-light btn-sm" onclick="show('e2-3');">Solución</button>
+    2.  $\dfrac{-(\overline{z_1}){(z_2)}^2+iz_3}{\overline{z_1}+\overline{z_3}}$. <button id="e2-3" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
         ::: {#solucion-e2-3 .callout .collapse}
         $\dfrac{-(\overline{z_1}){(z_2)}^2+iz_3}{\overline{z_1}+\overline{z_3}}=-2 + \dfrac{5}{3}i$. 
@@ -172,13 +169,13 @@ Como $0 < 4-r\leq 4$, entonces $i^{4-r}$ es una de las primeras potencias de exp
 
 3.  Resuelve las siguientes ecuaciones con coeficientes complejos:
 
-    1.  $z^2+(-3+2i)z+(5+i)=0$.  <button id="e2-4" class="btn btn-light btn-sm" onclick="show('e2-4');">Solución</button>
+    1.  $z^2+(-3+2i)z+(5+i)=0$.  <button id="e2-4" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
         ::: {#solucion-e2-4 .callout .collapse}
         Las soluciones son $\frac{3- 2i \pm \sqrt{-15 - 16i}}2$.
         :::
 
-    2.  $z^6-z^3-2=0$. <button id="e2-5" class="btn btn-light btn-sm" onclick="show('e2-5');">Solución</button>
+    2.  $z^6-z^3-2=0$. <button id="e2-5" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
         ::: {#solucion-e2-5 .callout .collapse}
         Hacemos $x=z^3$, con lo que obtenemos una nueva ecuación $x^x-x-2=0$, cuyas raíces son $x=-1$ y $x=2$. Por tanto, las soluciones de la ecuación original son las raíces cúbicas de $-1$ y $2$. 
@@ -201,7 +198,7 @@ En esta sección haremos uso de algunas funciones trigonométricas y de algunas 
     JXG.Options.axis.ticks.drawLabels = false;
     var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-2,2,2,-2], axis:true, showCopyright:false, showNavigation:false, grid:false});
     //var c = board.create('circle',[[0,0],[0,1]]);
-    var z = board.create('point',[1,1.5], {name:"\$z=(a,b)\$"});
+    var z = board.create('point',[1,1.5], {name:"\\(z=(a,b)\\)"});
     var pa = board.create('point', [()=>z.X(),()=>0], {name:"", size:0})
     var pb = board.create('point', [()=>0,()=>z.Y()], {name:"", size:0})
     var a = board.create('segment',[function(){return z}, [function(){return z.X()},0]], {dash:1, strokeColor:"red"})
@@ -257,7 +254,7 @@ Describe geométricamente los conjuntos de números complejos definidos de la si
 
 
 1.  $\{z\in\mathbb{C}\colon
-    \operatorname{Re}(z) > 0\}$. <button id="e3-1" class="btn btn-light btn-sm" onclick="show('e3-1');">Solución</button>
+    \operatorname{Re}(z) > 0\}$. <button id="e3-1" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
     :::: {#solucion-e3-1 .callout .collapse}
     ::: {#ebox3-1 .jxgbox style="width:400px; height:400px;display:inline-block;text-align: center;"}
@@ -274,7 +271,7 @@ Describe geométricamente los conjuntos de números complejos definidos de la si
     </script>
     ::::
 
-2.  $\{z\in\mathbb{C}\colon -1\leq \operatorname{Re}(z)\leq 2\,,\; \|z\|=1\}$. <button id="e3-2" class="btn btn-light btn-sm" onclick="show('e3-2');">Solución</button>
+2.  $\{z\in\mathbb{C}\colon -1\leq \operatorname{Re}(z)\leq 2\,,\; \|z\|=1\}$. <button id="e3-2" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
     :::: {#solucion-e3-2 .callout .collapse}
     ::: {#ebox3-2 .jxgbox style="width:400px; height:400px;display:inline-block;text-align: center;"}
@@ -290,7 +287,7 @@ Describe geométricamente los conjuntos de números complejos definidos de la si
     
     ::::
 
-3.  $\{z\in\mathbb{C}\colon 1 < \|z\| < 2\}$. <button id="e3-3" class="btn btn-light btn-sm" onclick="show('e3-3');">Solución</button>
+3.  $\{z\in\mathbb{C}\colon 1 < \|z\| < 2\}$. <button id="e3-3" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
     :::: {#solucion-e3-3 .callout .collapse}
     ::: {#ebox3-3 .jxgbox style="width:400px; height:400px;display:inline-block;text-align: center;"}
@@ -370,7 +367,7 @@ $z_4=1.$
 
     3.  Escríbelos en forma polar y trigonométrica.
 
-    4.  Representa gráficamente al número complejo opuesto, al conjugado y al opuesto del conjugado de cada uno de los cuatro números complejos dados. <button id="e4-1" class="btn btn-light btn-sm" onclick="show('e4-1');">Solución</button>
+    4.  Representa gráficamente al número complejo opuesto, al conjugado y al opuesto del conjugado de cada uno de los cuatro números complejos dados. <button id="e4-1" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
         :::: {#solucion-e4-1 .callout .collapse}
         Vamos a dar la solución para $z_1$. El argumento de $z_1$ es
@@ -385,10 +382,10 @@ $z_4=1.$
         JXG.Options.text.useMathJax = true;
         function pintae41(){
           var board = JXG.JSXGraph.initBoard('ebox4-1', {boundingbox: [-3, 3, 3, -3], showCopyright:false, showNavigation:false, axis:true});
-          board.create('point',[Math.sqrt(3),-1],{name:'\$z_1\$',fixed:true})
-          board.create('point',[-Math.sqrt(3),1],{name:'\$-z_1\$',fixed:true})
-          board.create('point',[Math.sqrt(3),1],{name:'\$\\overline{z_1}\$',fixed:true})
-          board.create('point',[-Math.sqrt(3),-1],{name:'\$-\\overline{z_1}\$',fixed:true})
+          board.create('point',[Math.sqrt(3),-1],{name:'\\(z_1\\)',fixed:true})
+          board.create('point',[-Math.sqrt(3),1],{name:'\\(-z_1\\)',fixed:true})
+          board.create('point',[Math.sqrt(3),1],{name:'\\(\\overline{z_1}\\)',fixed:true})
+          board.create('point',[-Math.sqrt(3),-1],{name:'\\(-\\overline{z_1}\\)',fixed:true})
         }
         pintae41();
         </script>
@@ -398,7 +395,7 @@ $z_4=1.$
 
     1.  Halla la forma binómica de cada uno de ellos.
 
-    2.  Calcula $z_1\cdot z_2$ y $\dfrac{z_1}{z_2}$ utilizando la forma polar. <button id="e4-2" class="btn btn-light btn-sm" onclick="show('e4-2');">Solución</button>
+    2.  Calcula $z_1\cdot z_2$ y $\dfrac{z_1}{z_2}$ utilizando la forma polar. <button id="e4-2" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
         :::: {#solucion-e4-2 .callout .collapse}
         Tenemos que $z_1=2\left(\cos\left( \frac{2\pi}3 \right) + i
@@ -411,7 +408,7 @@ $z_4=1.$
         $\dfrac{z_1}{z_2}=\left(\dfrac{2}6\right)_{120^o-45^o}=\left(\dfrac{1}3\right)_{75^o}$.
         ::::
 
-1.  Escribe el número complejo $z=-1+\sqrt{3}i$ en forma polar y calcula $z^6$ en dicha forma. Pasa el resultado a la forma binómica. <button id="e4-3" class="btn btn-light btn-sm" onclick="show('e4-3');">Solución</button>
+1.  Escribe el número complejo $z=-1+\sqrt{3}i$ en forma polar y calcula $z^6$ en dicha forma. Pasa el resultado a la forma binómica. <button id="e4-3" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
     ::: {#solucion-e4-3 .callout .collapse}
     Ya hemos visto antes que $z=(2)_{120^o}=(2)_{\frac{2\pi}3}$. Así $z^6=(2^6)_{\frac{12\pi}3}=(64)_{4\pi}=(64)_{0}=64$.
@@ -448,7 +445,7 @@ $$
 Calcula:
 
 
-1.  $\sqrt{i}$. <button id="e5-1" class="btn btn-light btn-sm" onclick="show('e5-1');">Solución</button>
+1.  $\sqrt{i}$. <button id="e5-1" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
 
     ::: {#solucion-e5-1 .callout .collapse}
     $\sqrt{i}=\left\{\dfrac{\sqrt{2}}{2}+i
@@ -456,7 +453,7 @@ Calcula:
     \dfrac{\sqrt{2}}{2}\right\}$.
     :::
 
-2.  $\sqrt[3]{1}$. <button id="e5-2" class="btn btn-light btn-sm" onclick="show('e5-2');">Solución</button>
+2.  $\sqrt[3]{1}$. <button id="e5-2" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
     
     ::: {#solucion-e5-2 .callout .collapse}
     $\sqrt[3]{1}=\left\{-\dfrac{1}{2}+i
@@ -464,7 +461,7 @@ Calcula:
     \right\}$. 
     :::
 
-3.  $\sqrt[3]{-1+i}$. <button id="e5-3" class="btn btn-light btn-sm" onclick="show('e5-3');">Solución</button>
+3.  $\sqrt[3]{-1+i}$. <button id="e5-3" class="btn btn-light btn-sm" onclick="show(this.id);">Solución</button>
     
     ::: {#solucion-e5-3 .callout .collapse}
     $\sqrt[3]{-1+i}=\left\{\sqrt[6]{2}\left(\cos\left(\frac{\pi}4
@@ -476,105 +473,6 @@ Calcula:
     \right\}$. 
     :::
 ::::
-
-
-## Cuestionario de números complejos 
-
-
-#### Pregunta 1
-
-La parte real de $(1+i)^2$ es
-
-a.  $0$
-
-b.  $1$
-
-c.  $2$
-
-d.  $2i$
-
-#### Pregunta 2
-
-La parte imaginaria de $(1+i)^2$ vale
-
-a.  $2i$
-
-b.  $1$
-
-c.  $2$
-
-d.  $0$
-
-#### Pregunta 3
-
-El módulo de $5+i$ vale
-
-a.  $6$
-
-b.  $\sqrt{26}$
-
-c.  $\sqrt{6}$
-
-d.  $\sqrt{24}$
-
-#### Pregunta 4
-
-El módulo de $i^3$ vale
-
-a.  $1$
-
-b.  $-1$
-
-c.  $i$
-
-d.  $-i$
-
-#### Pregunta 5
-
-El argumento de $1+i$ es
-
-a.  $\pi /4$
-
-b.  $0$
-
-c.  $\pi /2$
-
-d.  $\sqrt{2}$
-
-#### Pregunta 6
-
-Encuentra las soluciones de $x^2+x+1=0$
-
-a.  $-\frac{1}{2}\pm \frac{\sqrt{3}}{2}\,i$
-
-b.  No tiene solución
-
-c.  $-\frac{1}{2}\pm \frac{3}{2}\, i$
-
-#### Pregunta 7
-
-Calcula $\frac{1+i}{1-i}$
-
-a.  $1-i$
-
-b.  $i$
-
-c.  $1+i$
-
-d.  $-i$
-
-#### Pregunta 8
-
-Calcula el argumento de $9-9\sqrt{3}i$
-
-a.  $45$
-
-b.  $-\pi /4$
-
-c.  $\pi /3$
-
-d.  $-\pi /3$
-
 
 
 ------------------------------------------------------------------------

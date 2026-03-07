@@ -4,6 +4,7 @@
 // });
 // survey.render(document.getElementById("surveyElement"));
 
+
 const survey = new Survey.Model(json);
 
 survey.applyTheme(myTheme);
@@ -44,9 +45,9 @@ function changeTitle (q) {
 survey.onValueChanged.add((_, options) => {
     // Change the quesion title when the question value is changed
     changeTitle(options.question);
-    MathJax.typesetPromise();
 });
 survey.onTextMarkdown.add((_, options) => {
+    MathJax.typesetPromise();
     const text = options.text;
     let html = getTextHtml(text, correctStr, true);
     if (!html) {
@@ -57,4 +58,6 @@ survey.onTextMarkdown.add((_, options) => {
         options.html = html;
     }
 });
+
+
 survey.render(document.getElementById("surveyElement"));

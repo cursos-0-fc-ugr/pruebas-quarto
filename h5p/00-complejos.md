@@ -201,7 +201,7 @@ En esta sección haremos uso de algunas funciones trigonométricas y de algunas 
     JXG.Options.axis.ticks.drawLabels = false;
     var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-2,2,2,-2], axis:true, showCopyright:false, showNavigation:false, grid:false});
     //var c = board.create('circle',[[0,0],[0,1]]);
-    var z = board.create('point',[1,1.5], {name:"\$z=(a,b)\$"});
+    var z = board.create('point',[1,1.5], {name:"\\(z=(a,b)\\)"});
     var pa = board.create('point', [()=>z.X(),()=>0], {name:"", size:0})
     var pb = board.create('point', [()=>0,()=>z.Y()], {name:"", size:0})
     var a = board.create('segment',[function(){return z}, [function(){return z.X()},0]], {dash:1, strokeColor:"red"})
@@ -385,10 +385,10 @@ $z_4=1.$
         JXG.Options.text.useMathJax = true;
         function pintae41(){
           var board = JXG.JSXGraph.initBoard('ebox4-1', {boundingbox: [-3, 3, 3, -3], showCopyright:false, showNavigation:false, axis:true});
-          board.create('point',[Math.sqrt(3),-1],{name:'\$z_1\$',fixed:true})
-          board.create('point',[-Math.sqrt(3),1],{name:'\$-z_1\$',fixed:true})
-          board.create('point',[Math.sqrt(3),1],{name:'\$\\overline{z_1}\$',fixed:true})
-          board.create('point',[-Math.sqrt(3),-1],{name:'\$-\\overline{z_1}\$',fixed:true})
+          board.create('point',[Math.sqrt(3),-1],{name:'\\(z_1\\)',fixed:true})
+          board.create('point',[-Math.sqrt(3),1],{name:'\\(-z_1\\)',fixed:true})
+          board.create('point',[Math.sqrt(3),1],{name:'\\(\\overline{z_1}\\)',fixed:true})
+          board.create('point',[-Math.sqrt(3),-1],{name:'\\(-\\overline{z_1}\\)',fixed:true})
         }
         pintae41();
         </script>
