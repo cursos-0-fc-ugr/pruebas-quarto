@@ -1,5 +1,5 @@
 <!-- LTeX: language=es -->
-# Pruebas quarto
+# Pruebas quarto
 
 Pruebas para migrar material de cursos cero a quarto.
 
