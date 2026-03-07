@@ -5,7 +5,8 @@ format:
   html: 
     #html-math-method: mathjax
     include-in-header: includes-header.html
-    toc: false
+    fontsize: 1.2em
+    toc: true
     page-layout: full
     format-links: true
     html-math-method:
