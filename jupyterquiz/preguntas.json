@@ -16,7 +16,7 @@
       {
         "answer": "\\(\\sqrt{24}\\)",
         "correct": false,
-        "feedback": "Recuerda que debes sumar los cuadrados de las partes real e imaginaria."
+        "feedback": "Recuerda que debes sumar los cuadrados de las partes real e imaginaria y luego sacar la raíz cuadrada."
       },
       {
         "answer": "\\(\\sqrt{6}\\)",
@@ -33,7 +33,7 @@
         "type": "value",
         "value": 0,
         "correct": true,
-        "feedback": "Correct0."
+        "feedback": "Correcto."
 
       },
       {
@@ -41,5 +41,49 @@
         "feedback": "Incorrecto. Desarrolla la expresión: $(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i$. La parte real es 0."
       }
     ]
-  }
+  },
+  {
+    "question": "La parte imaginaria de $(1+i)^2$ es",
+    "type": "numeric",
+    "answers": [
+      {
+        "type": "value",
+        "value": 2,
+        "correct": true,
+        "feedback": "Correcto."
+
+      },
+      {
+        "type": "default",
+        "feedback": "Incorrecto. Desarrolla la expresión: $(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i$. La parte imaginaria es 2."
+      }
+    ]
+  },
+  {
+    "question": "El módulo de \\(i^3\\) vale",
+    "type": "multiple_choice",
+    "answers": [
+      {
+        "answer": "\\(-1\\)",
+        "correct": false,
+        "feedback": "Aplica la fórmula del módulo: \\(|z| = \\sqrt{a^2 + b^2}\\) para \\(z = a + bi\\)."
+      },
+      {
+        "answer": "\\(1\\)",
+        "correct": true,
+        "feedback": "¡Correcto!"
+      },
+      {
+        "answer": "\\(\\sqrt{i}\\)",
+        "correct": false,
+        "feedback": "Recuerda que debes sumar los cuadrados de las partes real e imaginaria y luego sacar la raíz cuadrada, por lo que no puede salir un número no real."
+      },
+      {
+        "answer": "\\(-i\\)",
+        "correct": false,
+        "feedback": "Recuerda que debes sumar los cuadrados de las partes real e imaginaria y luego sacar la raíz cuadrada, por lo que no puede salir un número no real."
+      }      
+    ]
+  }  
+
 ]

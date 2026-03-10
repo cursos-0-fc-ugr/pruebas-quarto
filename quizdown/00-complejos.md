@@ -329,7 +329,7 @@ Describe geométricamente los conjuntos de números complejos definidos de la si
 ## Forma polar de un número complejo
 
 
-Se llama* forma polar* del número complejo $z$ a la expresión dada por $z=\left\| z\right\| _{\omega}$ donde $\left\| z\right\| $ es el módulo de $z$ y $\omega$ es un argumento de $z$.
+Se llama* forma polar* del número complejo $z$ a la expresión dada por $z=\left\| z\right\| _{\omega}$ donde $\left\| z\right\|$ es el módulo de $z$ y $\omega$ es un argumento de $z$.
 
 Por ejemplo, $1+i=\left( \sqrt{2}\right)_{\frac\pi 4}$.
 

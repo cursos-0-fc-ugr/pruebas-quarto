@@ -404,7 +404,7 @@ $z_4=1.$
         Tenemos que $z_1=2\left(\cos\left( \frac{2\pi}3 \right) + i
         \operatorname{sen}\left(\frac{2\pi}3 \right) \right)=
         -1+i\sqrt{3}$ y $z_2=3\left(\cos\left( \frac{\pi}2 \right) +
-        i \operatorname{sen}\left(\frac{\pi}2 \right) \right)= 3i $.
+        i \operatorname{sen}\left(\frac{\pi}2 \right) \right)= 3i$.
 
         El producto es $z_1z_1=(2\times 6)_{120^o+45^o}=(12)_{165^o}$,
         y la división es
