@@ -10,6 +10,7 @@ Hay tres carpetas, cada una con un modelo de cuestionarios de autoevaluación:
 - h5p
 - quizdown (con KaTeX)
 - surveyjs
+- jupyterviz (con MathJax 3, gracias Gustavo)
 
 ## Botones de solución oculta
 

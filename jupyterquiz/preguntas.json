@@ -1,0 +1,45 @@
+[
+  {
+    "question": "El módulo de \\(5+i\\) vale",
+    "type": "multiple_choice",
+    "answers": [
+      {
+        "answer": "\\(6\\)",
+        "correct": false,
+        "feedback": "Aplica la fórmula del módulo: \\(|z| = \\sqrt{a^2 + b^2}\\) para \\(z = a + bi\\)."
+      },
+      {
+        "answer": "\\(\\sqrt{26}\\)",
+        "correct": true,
+        "feedback": "¡Correcto! \\(|5+i| = \\sqrt{5^2 + 1^2} = \\sqrt{25 + 1} = \\sqrt{26}\\)."
+      },
+      {
+        "answer": "\\(\\sqrt{24}\\)",
+        "correct": false,
+        "feedback": "Recuerda que debes sumar los cuadrados de las partes real e imaginaria."
+      },
+      {
+        "answer": "\\(\\sqrt{6}\\)",
+        "correct": false,
+        "feedback": "Aplica la fórmula del módulo: \\(|z| = \\sqrt{a^2 + b^2}\\) para \\(z = a + bi\\)."
+      }      
+    ]
+  },
+  {
+    "question": "La parte real de $(1+i)^2$ es",
+    "type": "numeric",
+    "answers": [
+      {
+        "type": "value",
+        "value": 0,
+        "correct": true,
+        "feedback": "Correct0."
+
+      },
+      {
+        "type": "default",
+        "feedback": "Incorrecto. Desarrolla la expresión: $(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i$. La parte real es 0."
+      }
+    ]
+  }
+]
