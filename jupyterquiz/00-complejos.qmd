@@ -11,7 +11,7 @@ format:
     format-links: true
     html-math-method:
             method: mathjax
-            # url: "https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"
+            url: "https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"
             # url: "https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.4/tex-mml-chtml.js"
 
 ---
@@ -482,7 +482,7 @@ Resuelve los siguientes problemas para poner a prueba tus conocimientos.
 
 ```{python}
 #| echo: false
-from jupyterquiz import display_quiz
+from jupyterquiz_local import display_quiz
 import json
 
 # Forzamos la lectura en UTF-8 para evitar los símbolos raros

@@ -7,10 +7,10 @@ Pruebas para migrar material de cursos cero a quarto.
 
 Hay tres carpetas, cada una con un modelo de cuestionarios de autoevaluación:
 
-- h5p
-- quizdown (con KaTeX)
-- surveyjs
-- jupyterviz (con MathJax 3, gracias Gustavo)
+- h5p see https://h5p.org/ and https://lumi.education/en/ and 
+- quizdown (con KaTeX)  https://github.com/parmsam/quarto-quizdown
+- surveyjs see https://surveyjs.io/
+- jupyterviz (con MathJax 3, gracias Gustavo) see https://github.com/jmshea/jupyterquiz
 
 ## Botones de solución oculta
 
